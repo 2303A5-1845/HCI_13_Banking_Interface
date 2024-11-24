@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-press - Contact Us</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 40px;
+            width: 80%;
+            max-width: 900px;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .header p {
+            font-size: 18px;
+            color: #7f8c8d;
+        }
+
+        /* Contact Form Styling */
+        .contact-form {
+            margin-top: 40px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+            color: #2c3e50;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            height: 150px;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 15px;
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #27ae60;
+        }
+
+        /* Contact Details Section */
+        .contact-details {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .contact-details h2 {
+            font-size: 24px;
+            color: #2c3e50;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .contact-details p {
+            font-size: 16px;
+            color: #7f8c8d;
+            margin-bottom: 10px;
+        }
+
+        .contact-details a {
+            color: #2ecc71;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+
+        /* Social Media Section */
+        .social-media {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .social-media a {
+            color: #2ecc71;
+            font-size: 20px;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .social-media a:hover {
+            text-decoration: underline;
+        }
+
+        /* Live Chat Button */
+        .live-chat-btn {
+            margin-top: 30px;
+            padding: 15px 30px;
+            background-color: #3498db;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .live-chat-btn:hover {
+            background-color: #2980b9;
+        }
+
+        /* Embedded Map Section */
+        .map-section {
+            margin-top: 40px;
+            position: relative;
+        }
+
+        .map-section iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        /* Footer Section */
+        .footer {
+            margin-top: 40px;
+            font-size: 14px;
+            text-align: center;
+            color: #7f8c8d;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 30px;
+            }
+
+            .header h1 {
+                font-size: 30px;
+            }
+
+            .contact-details h2 {
+                font-size: 22px;
+            }
+
+            .contact-form button {
+                font-size: 16px;
+            }
+
+            .live-chat-btn {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>Contact Us</h1>
+            <p>We are here to assist you. Please fill out the form below or contact us through the details provided.</p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <form action="submit_contact_form.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Contact Details Section -->
+        <div class="contact-details">
+            <h2>Contact Information</h2>
+            <p>If you need immediate assistance, feel free to reach out to us:</p>
+            <p><strong>Email:</strong> <a href="mailto:support@Xpress.com">support@Xpress.com</a></p>
+            <p><strong>Phone:</strong> 1-800-XXX-XXXX</p>
+            <p><strong>Office Address:</strong> 123 X-press Banking St., Financial District, City, State</p>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-media">
+            <h2>Follow Us</h2>
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Twitter</a>
+            <a href="#" target="_blank">Instagram</a>
+        </div>
+
+        <!-- Live Chat Button -->
+        <a href="chat.html" class="live-chat-btn">Start Live Chat</a>
+
+        <!-- Embedded Map Section -->
+        <div class="map-section">
+            <h2>Our Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_URL" title="Bank Location"></iframe>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="footer">
+            <p>&copy; 2024 X-press. All rights reserved.</p>
+        </div>
+    </div>
+
+</body>
+</html>

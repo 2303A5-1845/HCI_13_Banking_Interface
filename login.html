@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url('https://static.vecteezy.com/system/resources/previews/014/468/621/non_2x/abstract-digital-technology-background-with-concept-security-vector.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: whitesmoke;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            padding: 20px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .login-form h2 {
+            font-size: 24px;
+            color: green;
+            margin-bottom: 10px;
+        }
+
+        .login-form p {
+            color: green;
+            margin-bottom: 20px;
+        }
+
+        .login-form label {
+            display: block;
+            text-align: left;
+            color: green;
+            margin-bottom: 5px;
+        }
+
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .login-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login-form button:hover {
+            background-color: #004d00;
+        }
+
+        .login-form .options {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .login-form .options a {
+            color: green;
+            text-decoration: none;
+            margin: 0 5px;
+            transition: color 0.3s;
+        }
+
+        .login-form .options a:hover {
+            color: #004d00;
+        }
+
+        .home-link {
+            display: inline-block;
+            margin-bottom: 15px;
+            color: green;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .home-link:hover {
+            color: #004d00;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-form">
+            
+            <h2>X-press</h2>
+            <p>Enter your Credentials to Login</p>
+            
+            <form action="HOME.HTML" method="POST">
+                <label for="username">Email</label>
+                <input type="text" id="username" name="username" value="username@gmail.com" required>
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" value="nithin@1234" required>
+                
+                <button type="button">
+                    <a href="home.html" style="text-decoration: none; color: white;">Login</a>
+                </button>
+                
+                 
+
+                
+                <div class="options">
+                    <a href="#">Forgot Password?</a>
+                    <a href="#">New User? Register Here</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

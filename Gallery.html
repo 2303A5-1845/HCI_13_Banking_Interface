@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Gallery</title>
+    <style>
+        /* General styling for the page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: green;
+            margin: 10px 0;
+        }
+        h3 {
+            text-align: center;
+            color: white;
+            font-weight: normal;
+            margin-top: 5px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .gallery-item {
+            width: 220px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            transition: transform 0.3s;
+            text-align: center;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 8px;
+        }
+        .caption {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin: 10px 0 5px;
+        }
+        .description {
+            font-size: 14px;
+            color: #555;
+            padding: 0 10px 10px;
+        }
+        .gallery-row {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .footer-heading {
+            margin-top: 30px;
+            font-size: 18px;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            color: white;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Professional Heading -->
+    <h1>Welcome to X-press Services Gallery</h1>
+    <h3>A curated look into the innovations and solutions we provide</h3>
+
+    <!-- Gallery Rows with Paired Images -->
+    <div class="gallery">
+        <div class="gallery-row">
+            <div class="gallery-item">
+                <div class="caption">Digital Banking Experience</div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8OiJAam11IZzujOnlVlbJ7E2Y8D6GnqfTiXqqcl7Ev9VHJGGnAf-5Gmbv&s=10" alt="Banking Image 1">
+                <div class="description">Explore the ease and convenience of digital banking, allowing users to manage finances anytime, anywhere.</div>
+            </div>
+            <div class="gallery-item">
+                <div class="caption">Secure Transactions</div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVZyX5kVwuP3YU0-ibBKxS4o1QWMt4J7SPYv5h2vpfYQ&s" alt="Banking Image 2">
+                <div class="description">Prioritizing security in every transaction to ensure customer trust and safety in banking operations.</div>
+            </div>
+        </div>
+        
+        <div class="gallery-row">
+            <div class="gallery-item">
+                <div class="caption">Financial Planning</div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4YamgKrFh3mlDvU5XnHEquh-y74WrvbTVHrAojDNL8uRiAyiGfAYHynM&s=10" alt="Banking Image 3">
+                <div class="description">Providing tools for effective financial planning to help customers achieve their financial goals.</div>
+            </div>
+            <div class="gallery-item">
+                <div class="caption">Mobile Banking App</div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_NX5qE7LAe40X12rt8dlQchmXKpA6DmqlaAinv4F5TownCdZd6eCuX-1O&s=10" alt="Banking Image 4">
+                <div class="description">A feature-rich mobile banking app designed for user-friendly access to banking services on the go.</div>
+            </div>
+        </div>
+
+        <div class="gallery-row">
+            <div class="gallery-item">
+                <div class="caption">Investment Solutions</div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_IXYvJXD6aT_buVP37lws1mJ5howtxqLUQjMQDjeDeA&s" alt="Banking Image 5">
+                <div class="description">Diverse investment options to help clients build a strong and secure financial future.</div>
+            </div>
+            <div class="gallery-item">
+                <div class="caption">24/7 Customer Support</div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYiAQYrVws_JKE8UhAgh9V8Ab86bwx-dmexHqJYul65cSGyr5H7bUKUHGT&s=10" alt="Banking Image 6">
+                <div class="description">Round-the-clock customer support ensures assistance is always available for all banking needs.</div>
+            </div>
+        </div>
+
+        <div class="gallery-row">
+            <div class="gallery-item">
+                <div class="caption">Corporate Banking</div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRUTuI8EDgk8Li9_9xN0xx0J72UyMPSFZLOA&usqp=CAU" alt="Banking Image 7">
+                <div class="description">Tailored banking solutions designed for the unique needs of corporate clients and large enterprises.</div>
+            </div>
+            <div class="gallery-item">
+                <div class="caption">AI-Powered Banking</div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScUUd-uvuvzCVZt6ZWAAN6zLA4UF517iuy6g&s" alt="Banking Image 8">
+                <div class="description">AI-driven solutions for smarter, personalized banking experiences that adapt to customer needs.</div>
+            </div>
+        </div>
+
+        <div class="gallery-row">
+            <div class="gallery-item">
+                <div class="caption">Blockchain Security</div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzJaZ9mv98eW55HaGNl0IifykJcuanVO2e2peNDErTOsPnvmLpJA9sFwed&s=10" alt="Banking Image 9">
+                <div class="description">Utilizing blockchain technology to ensure a secure, transparent banking system.</div>
+            </div>
+            <div class="gallery-item">
+                <div class="caption">Innovative Payment Solutions</div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxfOPyXs1NT4qoge7XOlP1-yxX6T65y1T_aA&usqp=CAU" alt="Banking Image 10">
+                <div class="description">Cutting-edge payment options for faster, seamless transactions in everyday banking.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Professional Heading -->
+    <div class="footer-heading">
+        Empowering your financial journey with secure, innovative, and customer-focused solutions
+    </div>
+
+    <!-- Copyright Notice -->
+    <div class="footer">
+        &copy; 2024 Banking Gallery. All rights reserved.
+    </div>
+
+</body>
+</html>
