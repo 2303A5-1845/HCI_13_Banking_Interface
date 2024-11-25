@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Careers - [Bank Name]</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+            color: #333;
+        }
+
+        header {
+            background-color: #004d00;
+            padding: 60px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        header h2 {
+            font-size: 20px;
+            font-weight: 400;
+            margin-top: 10px;
+        }
+
+        .content {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Section Title */
+        .section-title {
+            font-size: 28px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+
+        /* Card Styles */
+        .card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            padding: 20px;
+        }
+
+        .card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .card ul li {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .card .salary {
+            font-weight: 600;
+            color: #004d00;
+        }
+
+        /* Job Categories Section */
+        .job-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-between;
+        }
+
+        .job-category {
+            flex: 1;
+            max-width: 250px;
+            background-color: #e6f5e6;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .job-category:hover {
+            transform: scale(1.05);
+        }
+
+        .job-category img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .job-category h4 {
+            font-size: 20px;
+            color: #004d00;
+            font-weight: 600;
+        }
+
+        .apply-button {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #004d00;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .apply-button:hover {
+            background-color: #003300;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #004d00;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .job-categories {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Careers at X-press</h1>
+        <h2>Build your future with us. Explore exciting career opportunities.</h2>
+    </header>
+
+    <div class="content">
+
+        <!-- Why Work with Us? -->
+        <section>
+            <h2 class="section-title">Why Work with Us?</h2>
+            <div class="card">
+                <ul>
+                    <li><strong>Professional Growth:</strong> We offer a robust platform for your professional development and skill-building.</li>
+                    <li><strong>Diverse Work Culture:</strong> Join a diverse, inclusive workplace where your contributions are valued.</li>
+                    <li><strong>Comprehensive Benefits:</strong> We provide health, wellness, and retirement benefits.</li>
+                    <li><strong>Work-Life Balance:</strong> Enjoy flexible working hours and remote work options.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Job Categories -->
+        <section>
+            <h2 class="section-title">Our Job Categories</h2>
+
+            <div class="job-categories">
+
+                <!-- Finance & Accounting Category -->
+                <div class="job-category">
+                    <img src="https://th.bing.com/th/id/OIP.kjKAddgesjaQieDhf3CR7gHaFj?w=242&h=181&c=7&r=0&o=5&pid=1.7" alt="Finance & Accounting">
+                    <h4>Finance & Accounting</h4>
+                    <ul>
+                        <li>Financial Analyst - <span class="salary">₹6,00,000 - ₹8,00,000</span></li>
+                        <li>Risk Manager - <span class="salary">₹12,00,000 - ₹18,00,000</span></li>
+                        <li>Internal Auditor - <span class="salary">₹7,00,000 - ₹9,00,000</span></li>
+                        <li>Credit Analyst - <span class="salary">₹5,00,000 - ₹7,00,000</span></li>
+                    </ul>
+                    <a href="#" class="apply-button">Apply Now</a>
+                </div>
+
+                <!-- Technology & Innovation Category -->
+                <div class="job-category">
+                    <img src="https://th.bing.com/th/id/OIP.1KGSJHcIXp5SUtTfJ6VpTwHaFT?w=222&h=180&c=7&r=0&o=5&pid=1.7" alt="Technology & Innovation">
+                    <h4>Technology & Innovation</h4>
+                    <ul>
+                        <li>Software Developer - <span class="salary">₹8,00,000 - ₹12,00,000</span></li>
+                        <li>IT Support Specialist - <span class="salary">₹4,00,000 - ₹6,00,000</span></li>
+                        <li>Cybersecurity Analyst - <span class="salary">₹10,00,000 - ₹15,00,000</span></li>
+                        <li>Data Scientist - <span class="salary">₹9,00,000 - ₹14,00,000</span></li>
+                    </ul>
+                    <a href="#" class="apply-button">Apply Now</a>
+                </div>
+
+                <!-- Customer Service & Sales Category -->
+                <div class="job-category">
+                    <img src="data:image/jpeg;base64,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" alt="Customer Service & Sales">
+                    <h4>Customer Service & Sales</h4>
+                    <ul>
+                        <li>Relationship Manager - <span class="salary">₹7,00,000 - ₹10,00,000</span></li>
+                        <li>Customer Support Specialist - <span class="salary">₹3,50,000 - ₹5,00,000</span></li>
+                        <li>Branch Manager - <span class="salary">₹9,00,000 - ₹12,00,000</span></li>
+                        <li>Sales Executive - <span class="salary">₹4,50,000 - ₹7,00,000</span></li>
+                    </ul>
+                    <a href="#" class="apply-button">Apply Now</a>
+                </div>
+
+                <!-- Operations & Administration Category -->
+                <div class="job-category">
+                    <img src="data:image/jpeg;base64,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" alt="Operations & Administration">
+                    <h4>Operations & Administration</h4>
+                    <ul>
+                        <li>Operations Manager - <span class="salary">₹10,00,000 - ₹14,00,000</span></li>
+                        <li>Banking Operations Officer - <span class="salary">₹6,00,000 - ₹8,00,000</span></li>
+                        <li>HR Specialist - <span class="salary">₹5,50,000 - ₹7,00,000</span></li>
+                        <li>Administrative Assistant - <span class="salary">₹3,00,000 - ₹4,50,000</span></li>
+                    </ul>
+                    <a href="#" class="apply-button">Apply Now</a>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 X-press All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
